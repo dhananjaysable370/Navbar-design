@@ -9,7 +9,7 @@ const Home = () => {
         <p className="text-xl text-gray-900">
           The key to a happy life if having a cat
         </p>
-        <button className="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-semibold cursor-pointer">
+        <button className="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-semibold cursor-pointer transition-all">
           Adopt Meow
         </button>
       </div>
