@@ -1,7 +1,7 @@
 const Whycats = () => {
   return (
     <div>
-      <h1 className="text-5xl">Why Cats Page</h1>
+      <h1 className="text-5xl text-center">Why Cats Page</h1>
     </div>
   );
 };
