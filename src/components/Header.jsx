@@ -10,7 +10,7 @@ const Header = () => {
         </div>
       </Link>
       <nav>
-        <ul className="flex gap-4 text-lg ">
+        <ul className="flex gap-4 text-lg items-center justify-center">
           <Link to="/Navbar-design/overview">
             <li className="px-5 py-2 cursor-pointer font-semibold">Overview</li>
           </Link>
