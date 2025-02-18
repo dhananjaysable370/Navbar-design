@@ -1,0 +1,6 @@
+.img{
+    background-image: url('../assets/bgimg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
