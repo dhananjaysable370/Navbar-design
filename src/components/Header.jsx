@@ -29,25 +29,25 @@ const Header = () => {
           <ul className="flex items-center justify-center flex-col md:flex-row gap-6 text-lg font-semibold text-center">
             <Link
               to="/Navbar-design/overview"
-              className="hover:text-blue-600 transition px-4"
+              className="hover:text-blue-600 transition-all px-4"
             >
               <li>Overview</li>
             </Link>
             <Link
               to="/Navbar-design/whycats"
-              className="hover:text-blue-600 transition px-4"
+              className="hover:text-blue-600 transition-all px-4"
             >
               <li>Why Cats?</li>
             </Link>
             <Link
               to="/Navbar-design/diet"
-              className="hover:text-blue-600 transition px-4"
+              className="hover:text-blue-600 transition-all px-4"
             >
               <li>Diet</li>
             </Link>
             <Link
               to="/Navbar-design/adopt"
-              className="border-2 border-blue-400 text-blue-500 rounded-lg px-6 py-2 hover:bg-blue-700 hover:text-white transition font-semibold"
+              className="border-2 border-blue-400 text-blue-500 rounded-lg px-6 py-2 hover:bg-blue-700 hover:text-white transition-all font-semibold"
             >
               Adopt Meow
             </Link>
