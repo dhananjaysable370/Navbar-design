@@ -1,8 +1,8 @@
-import bgimg from "../assets/R.jpeg";
+import bgimg from "../assets/bgimg.jpg";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div>
       <div
         className={`bg-[url(${bgimg})] bg-top bg-no-repeat bg-cover h-[80vh] absolute top-24 left-0 w-[100vw] flex items-center justify-center bg-[rgba(12,8,8,0.15)] flex-col gap-4 text-center`}
       >
