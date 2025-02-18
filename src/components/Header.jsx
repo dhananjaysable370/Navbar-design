@@ -11,18 +11,18 @@ const Header = () => {
       </Link>
       <nav>
         <ul className="flex gap-4 text-lg ">
-          <Link to="/overview">
+          <Link to="/Navbar-design/overview">
             <li className="px-5 py-2 cursor-pointer font-semibold">Overview</li>
           </Link>
-          <Link to="/whycats">
+          <Link to="/Navbar-design/whycats">
             <li className="px-5 py-2 cursor-pointer font-semibold">
               Why Cats?
             </li>
           </Link>
-          <Link to="/diet">
+          <Link to="/Navbar-design/diet">
             <li className="px-5 py-2 cursor-pointer font-semibold">Diet</li>
           </Link>
-          <Link to="/adopt">
+          <Link to="/Navbar-design/adopt">
             <li className="px-5 py-2 bg-gray-200 border-2 border-blue-400 cursor-pointer flex items-center justify-center text-blue-500 font-semibold rounded-md text-center hover:bg-blue-700 hover:text-white transition-all">
               Adopt Meow
             </li>
