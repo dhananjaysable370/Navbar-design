@@ -1,4 +1,5 @@
-import bgimg from "../assets/R.jpeg";
+import bgimg from '../assets/R.jpeg';
+
 const Home = () => {
   return (
     <div className="home">
