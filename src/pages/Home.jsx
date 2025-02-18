@@ -1,4 +1,3 @@
-// import bgimg from "../assets/bgimg.jpg";
 import "./home.css";
 const Home = () => {
   return (
