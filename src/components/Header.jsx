@@ -22,18 +22,27 @@ const Header = () => {
         </button>
 
         <nav
-          className={`absolute md:relative  left-0 w-full md:w-auto bg-white md:bg-transparent shadow-lg md:shadow-none transition-all md:flex md:items-center md:gap-8 p-6 md:p-0 rounded-md md:rounded-none z-40 ${
+          className={`absolute md:relative sm:top-0 top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-lg md:shadow-none transition-all md:flex md:items-center md:gap-8 p-6 md:p-0 rounded-md md:rounded-none z-40 ${
             isOpen ? "block" : "hidden"
           }`}
         >
           <ul className="flex items-center justify-center flex-col md:flex-row gap-6 text-lg font-semibold text-center">
-            <Link to="/Navbar-design/overview" className="hover:text-blue-600 transition px-4">
+            <Link
+              to="/Navbar-design/overview"
+              className="hover:text-blue-600 transition px-4"
+            >
               <li>Overview</li>
             </Link>
-            <Link to="/Navbar-design/whycats" className="hover:text-blue-600 transition px-4">
+            <Link
+              to="/Navbar-design/whycats"
+              className="hover:text-blue-600 transition px-4"
+            >
               <li>Why Cats?</li>
             </Link>
-            <Link to="/Navbar-design/diet" className="hover:text-blue-600 transition px-4">
+            <Link
+              to="/Navbar-design/diet"
+              className="hover:text-blue-600 transition px-4"
+            >
               <li>Diet</li>
             </Link>
             <Link
