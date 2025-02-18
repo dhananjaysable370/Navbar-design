@@ -1,35 +1,51 @@
+import { useState } from "react";
 import catimg from "../assets/cat.jpg";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="flex items-center justify-between px-20 py-2 w-full text-center">
-      <Link to="/Navbar-design">
-        <div className="flex items-center justify-center gap-2 text-2xl font-bold">
-          <img src={catimg} alt="Cat" width={60} height={50} />
-          <h1 className="text-4xl">Meow</h1>
-        </div>
-      </Link>
-      <nav>
-        <ul className="flex gap-4 text-lg items-center justify-center">
-          <Link to="/Navbar-design/overview">
-            <li className="px-5 py-2 cursor-pointer font-semibold">Overview</li>
-          </Link>
-          <Link to="/Navbar-design/whycats">
-            <li className="px-5 py-2 cursor-pointer font-semibold">
-              Why Cats?
-            </li>
-          </Link>
-          <Link to="/Navbar-design/diet">
-            <li className="px-5 py-2 cursor-pointer font-semibold">Diet</li>
-          </Link>
-          <Link to="/Navbar-design/adopt">
-            <li className="px-5 py-2 border-2 border-blue-400 cursor-pointer flex items-center justify-center text-blue-500 font-semibold rounded-md text-center hover:bg-blue-700 hover:text-white transition-all">
+    <header className="w-full bg-white shadow-md sticky top-0 z-50">
+      <div className="flex items-center justify-between px-6 md:px-12 py-4">
+        <Link to="/Navbar-design" className="flex items-center gap-3">
+          <img src={catimg} alt="Cat" className="w-14 h-14" />
+          <h1 className="text-3xl font-bold">Meow</h1>
+        </Link>
+
+        <button
+          className="md:hidden text-gray-800"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
+        <nav
+          className={`absolute md:relative  left-0 w-full md:w-auto bg-white md:bg-transparent shadow-lg md:shadow-none transition-all md:flex md:items-center md:gap-8 p-6 md:p-0 rounded-md md:rounded-none z-40 ${
+            isOpen ? "block" : "hidden"
+          }`}
+        >
+          <ul className="flex items-center justify-center flex-col md:flex-row gap-6 text-lg font-semibold text-center">
+            <Link to="/Navbar-design/overview" className="hover:text-blue-600 transition px-4">
+              <li>Overview</li>
+            </Link>
+            <Link to="/Navbar-design/whycats" className="hover:text-blue-600 transition px-4">
+              <li>Why Cats?</li>
+            </Link>
+            <Link to="/Navbar-design/diet" className="hover:text-blue-600 transition px-4">
+              <li>Diet</li>
+            </Link>
+            <Link
+              to="/Navbar-design/adopt"
+              className="border-2 border-blue-400 text-blue-500 rounded-lg px-6 py-2 hover:bg-blue-700 hover:text-white transition font-semibold"
+            >
               Adopt Meow
-            </li>
-          </Link>
-        </ul>
-      </nav>
-    </div>
+            </Link>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 };
 
