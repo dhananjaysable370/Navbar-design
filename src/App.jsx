@@ -13,7 +13,7 @@ function App() {
       <Header />
       <div className="flex items-center justify-center h-[80vh]">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Navbar-design" element={<Home />} />
           <Route path="/overview" element={<Overview />} />
           <Route path="/whycats" element={<Whycats />} />
           <Route path="/diet" element={<Diet />} />

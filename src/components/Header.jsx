@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="flex items-center justify-between px-20 py-2 w-full text-center">
-      <Link to="/">
+      <Link to="/Navbar-design">
         <div className="flex items-center justify-center gap-2 text-2xl font-bold">
           <img src={catimg} alt="Cat" width={70} height={70} />
           <h1>Cat</h1>
