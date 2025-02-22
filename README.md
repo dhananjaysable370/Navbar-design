@@ -1,1 +1,1 @@
-[Check this out](https://dhananjaysable370.github.io/Navbar-design)
+[Check this out](https://dhananjaysable370.github.io/Responsive-Navbar)
